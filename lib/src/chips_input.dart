@@ -124,6 +124,9 @@ class ChipsInputState<T> extends State<ChipsInput<T>>
   RenderBox get renderBox => context.findRenderObject();
 
   @override
+  AutofillScope get currentAutofillScope => null;
+
+  @override
   void initState() {
     super.initState();
     _chips.addAll(widget.initialValue);
