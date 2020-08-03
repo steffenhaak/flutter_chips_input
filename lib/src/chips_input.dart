@@ -12,7 +12,7 @@ typedef ChipSelected<T> = void Function(T data, bool selected);
 typedef ChipsBuilder<T> = Widget Function(
     BuildContext context, ChipsInputState<T> state, T data);
 
-const kObjectReplacementChar = 0xFFFD;
+const kObjectReplacementChar = 0x200B;
 
 extension on TextEditingValue {
   String get normalCharactersText => String.fromCharCodes(
